@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>need4speed</title>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" 
+      type="image/png" 
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/81/alien-monster_1f47e.png">
+    </head>
+
+    <body class="text-white">
+        <script type="text/javascript">
+            // <!--
+        
+            document.body.style.display; "none";
+        
+            // If onbeforeunload fails
+            window.onload = function() {
+                window.setTimeout(
+                    function() {
+                        window.scrollTo(0,0);
+                        document.body.style.display = "inherit";
+                    },
+                    0
+                );
+            };
+        
+            /* This should scroll the page to the top before the page refreshes */
+            window.onbeforeunload = function() { window.scrollTo(0,0); }
+        
+            //-->
+            </script>
+
+        <div class="wave-container text-center">
+            <h1>need4speed</h1>
+            <br>
+            <p>a speed typing game || click the wave to scroll</p>
+            <br>
+            <br>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#game"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#752092" fill-opacity="1" d="M0,32L60,80C120,128,240,224,360,234.7C480,245,600,171,720,165.3C840,160,960,224,1080,229.3C1200,235,1320,181,1380,154.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg></a>
+        </div>
+        
+<div id="game" class="container text-center">
+
+    <!-- Word & Input -->
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+          <p class="lead">Type the given word within
+            <span class="text-success" id="seconds">3</span> seconds:</p>
+          <h2 class="display-3 mb-4" id="current-word">hello</h2>
+          <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input" autofocus>
+          <h4 class="mt-3" id="message"></h4>
+          <br>
+  
+          <!-- Time & Score Columns -->
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <h3>Time Left:
+                <span id="time">0</span>
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <h3>Score:
+                <span id="score">0</span>
+              </h3>
+            </div>
+          </div>
+  
+          <!-- Instructions -->
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card card-body text-white">
+                <h5>Instructions</h5>
+                <p>Type each word within the given seconds to score a point. 
+                    Your score will reset if you've typed the incorrect word when the time hits zero. Type the given word to start a new game. Good luck!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    </body>
+</html>
